@@ -9,6 +9,7 @@ import com.codeology.config.JwtTokenUtil;
 import com.codeology.dto.JwtResponse;
 import com.codeology.dto.LoginRequest;
 import com.codeology.dto.RegisterRequest;
+import com.codeology.model.Role;
 import com.codeology.model.User;
 import com.codeology.repository.UserRepository;
 import com.codeology.service.UserService;
@@ -19,6 +20,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.util.Set;
 import java.util.stream.Collectors;

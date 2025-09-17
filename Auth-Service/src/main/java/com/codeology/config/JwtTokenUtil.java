@@ -23,7 +23,6 @@ public class JwtTokenUtil {
     private Long jwtExpirationMs;
 
     private Key getSigningKey() {
-        // ensure jwtSecret is long/random enough for HS256
         return Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
     }
 
